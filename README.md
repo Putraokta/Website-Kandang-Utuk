@@ -44,3 +44,27 @@ Ikuti langkah berikut untuk menjalankan project di local:
 ```bash
 git clone https://github.com/Putraokta/Website-Kandang-Utuk.git
 cd Website-Kandang-Utuk
+
+### 2️⃣ Install Dependensi
+npm install
+npm run build
+npm run dev
+
+#### 🔑 Akun Demo
+| Role         | Email                                     | Password  |
+| ------------ | ----------------------------------------- | --------- |
+| **Admin**    | [admin@test.com](mailto:admin@test.com)   | admin123  |
+| **Peternak** | [farmer@test.com](mailto:farmer@test.com) | farmer123 |
+| **Pembeli**  | [buyer@test.com](mailto:buyer@test.com)   | buyer123  |
+
+#### 📂 Struktur Folder
+📦 Website-Kandang-Utuk
+ ┣ 📂 components   # Komponen UI
+ ┣ 📂 contexts     # Context API (Auth)
+ ┣ 📂 app/pages    # Halaman Next.js
+ ┣ 📂 public       # Asset gambar/logo
+ ┣ 📂 styles       # Tailwind styles
+ ┣ 📂 types        # TypeScript type
+ ┣ 📜 package.json # Konfigurasi project
+
+
