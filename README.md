@@ -5,7 +5,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178c6?logo=typescript&style=for-the-badge)
 
 <p align="center">
-  <img src="public/images/logo-lelang.png" alt="Logo Kandang Utuk" width="200" />
+  <img width="1216" height="549" alt="Image" src="https://github.com/user-attachments/assets/a47b6aa6-63d1-497e-8581-3e3ab26545c2" />
 </p>
 
 Website **Kandang Utuk** adalah platform jual beli & lelang ayam laga online berbasis **Next.js + TypeScript** dengan desain modern, responsif, dan sistem autentikasi multi-role.  
