@@ -44,15 +44,15 @@ Ikuti langkah berikut untuk menjalankan project di local:
 ```bash
 git clone https://github.com/Putraokta/Website-Kandang-Utuk.git
 cd Website-Kandang-Utuk
-
+```
 ### 2️⃣ Install Dependensi
 ```bash
 npm install
-
+```
 ### 3️⃣ Build & Jalankan Project
 ```bash
 npm run build
 npm run dev
-
+```
 
 
