@@ -11,8 +11,8 @@ export default function TestimonialsPage() {
   const testimonials = [
     {
       id: 1,
-      name: "Putri Pratamasari Dian Riano",
-      avatar: "/placeholder.svg?height=50&width=50",
+      name: "Putri Pratama Okta Riano",
+      avatar: "/Test1.jpg?height=50&width=50",
       rating: 5,
       date: "10:12 AM",
       comment:
@@ -20,7 +20,7 @@ export default function TestimonialsPage() {
     },
     {
       id: 2,
-      name: "Ahmad Daffa Zhilaal",
+      name: "Allaya Daffa Zhillal",
       avatar: "/placeholder.svg?height=50&width=50",
       rating: 5,
       date: "09:45 AM",
@@ -28,7 +28,7 @@ export default function TestimonialsPage() {
     },
     {
       id: 3,
-      name: "Haikal Maulana Irwadin",
+      name: "Naufal Maulana Izzuddin",
       avatar: "/placeholder.svg?height=50&width=50",
       rating: 4,
       date: "08:30 AM",
@@ -36,7 +36,7 @@ export default function TestimonialsPage() {
     },
     {
       id: 4,
-      name: "Dhimas Sulistyo Nugroho",
+      name: "Dimas Sulistyo Nugroho",
       avatar: "/placeholder.svg?height=50&width=50",
       rating: 5,
       date: "Yesterday",

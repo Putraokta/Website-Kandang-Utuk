@@ -7,9 +7,12 @@ import { AuthProvider } from "@/contexts/auth-context"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Perusahaan Dagang Jaya Utama",
+  title: "Kandang Utuk",
   description: "Platform marketplace dan lelang untuk kebutuhan peternak",
-    generator: 'v0.dev'
+  generator: "v0.dev",
+  icons: {
+    icon: "/images/logo lelang.png", // atau "/logo.png" jika pakai PNG
+  },
 }
 
 export default function RootLayout({
@@ -19,6 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="id">
+      <head>
+        {/* Untuk dukungan ekstra */}
+        <link rel="icon" href="/images/logo lelang.png" type="image/x-icon" />
+      </head>
       <body className={inter.className}>
         <AuthProvider>{children}</AuthProvider>
       </body>

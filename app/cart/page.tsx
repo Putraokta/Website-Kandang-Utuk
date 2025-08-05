@@ -20,18 +20,18 @@ export default function CartPage() {
   const [cartItems, setCartItems] = useState<CartItem[]>([
     {
       id: 1,
-      name: "Ayam Fillet ORGANIK",
-      price: 180000,
+      name: "Kaolan x Shadow (Jantan)",
+      price: 2500000,
       quantity: 1,
-      image: "/placeholder.svg?height=120&width=120",
-      seller: "Organic Farm",
+      image: "/1.jpg?height=120&width=120",
+      seller: "Kandang Utuk Farm",
     },
     {
       id: 2,
       name: "Ayam Fillet ORGANIK",
       price: 75000,
       quantity: 1,
-      image: "/placeholder.svg?height=120&width=120",
+      image: "/2.jpg?height=120&width=120",
       seller: "Fresh Market",
     },
     {
@@ -39,7 +39,7 @@ export default function CartPage() {
       name: "Ayam Fillet ORGANIK",
       price: 50000,
       quantity: 1,
-      image: "/placeholder.svg?height=120&width=120",
+      image: "/3.jpg?height=120&width=120",
       seller: "Local Farm",
     },
   ])

@@ -88,7 +88,7 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
     specifications: {
       Berat: "2,8 kg",
       Jenis: "Mangon",
-      Asal: "Kandang Utuk",
+      Asal: "Kandang Utuk Farm",
       "Usia Ayam": "8-12 bulan",
       Pengiriman: "Box",
     },
@@ -138,6 +138,8 @@ export default function ProductDetailPage({ params }: { params: { id: string } }
       comment: "Ayam sangat sesuai deskripsi. Hanya saja pengiriman sedikit terlambat. Namun, kualitasnya memuaskan.",
     },
   ]
+  
+  
 
   const relatedProducts = [
     {

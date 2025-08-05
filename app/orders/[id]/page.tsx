@@ -61,11 +61,11 @@ export default function OrderDetailPage({ params }: { params: { id: string } }) 
     items: [
       {
         id: 1,
-        name: "Ayam Fillet ORGANIK",
-        price: 180000,
+        name: "Kaolan x Shadow (Jantan)",
+        price: 2500000,
         quantity: 1,
-        image: "/placeholder.svg?height=80&width=80",
-        seller: "Organic Farm",
+        image: "/1.jpg?height=80&width=80",
+        seller: "Kandang Utuk Farm",
       },
       {
         id: 2,

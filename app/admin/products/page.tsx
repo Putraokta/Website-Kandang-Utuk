@@ -25,7 +25,7 @@ export default function AdminProducts() {
       rating: 4.8,
       reviews: 45,
       createdDate: "2024-01-15",
-      image: "/placeholder.svg?height=60&width=60",
+      image: "/1.jpg?height=60&width=60",
     },
     {
       id: 2,
@@ -39,7 +39,7 @@ export default function AdminProducts() {
       rating: 4.6,
       reviews: 32,
       createdDate: "2024-01-14",
-      image: "/placeholder.svg?height=60&width=60",
+      image: "/2.jpg?height=60&width=60",
     },
     {
       id: 3,
@@ -53,7 +53,7 @@ export default function AdminProducts() {
       rating: 4.2,
       reviews: 28,
       createdDate: "2024-01-12",
-      image: "/placeholder.svg?height=60&width=60",
+      image: "/3.jpg?height=60&width=60",
     },
     {
       id: 4,
@@ -67,7 +67,7 @@ export default function AdminProducts() {
       rating: 4.9,
       reviews: 18,
       createdDate: "2024-01-10",
-      image: "/placeholder.svg?height=60&width=60",
+      image: "/4.jpg?height=60&width=60",
     },
   ]
 

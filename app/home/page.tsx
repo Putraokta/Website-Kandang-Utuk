@@ -135,69 +135,77 @@ export default function HomePage() {
       <div className="max-w-7xl mx-auto px-4 lg:px-8 py-6 lg:py-8">
         {/* Hero Banner */}
         <div className="bg-gradient-to-r from-yellow-400 to-orange-500 p-8 lg:p-12 rounded-xl mb-8">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
-            <div className="text-center lg:text-left">
-              <h1 className="text-white font-bold text-2xl lg:text-4xl mb-4">
-                {user ? `Selamat Datang, ${user.name}!` : "Kandang Utuk - Platform Terpercaya"}
-              </h1>
-              <h2 className="text-white font-bold text-xl lg:text-3xl mb-6">KANDANG UTUK</h2>
-              <p className="text-white/90 text-lg mb-6">
-                {isRole("farmer")
-                  ? "Kelola produk dan lelang Anda dengan mudah"
-                  : isRole("admin")
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
+            {/* Left section: text and logo */}
+            <div className="flex items-center gap-6 w-full">
+              {/* Logo */}
+              <div className="flex-shrink-0">
+                <Image
+                  src="/images/logo lelang.png"
+                  alt="Logo Kandang Utuk"
+                  width={100}
+                  height={100}
+                  className="rounded-full bg-white p-2"
+                />
+              </div>
+
+              {/* Text */}
+              <div className="text-left">
+                <h1 className="text-white font-bold text-2xl lg:text-4xl mb-2">
+                  {user ? `Selamat Datang, ${user.name}!` : "Kandang Utuk - Platform Terpercaya"}
+                </h1>
+                <h2 className="text-white font-bold text-xl lg:text-3xl mb-4">KANDANG UTUK</h2>
+                <p className="text-white/90 text-lg mb-6">
+                  {isRole("farmer")
+                    ? "Kelola produk dan lelang Anda dengan mudah"
+                    : isRole("admin")
                     ? "Dashboard admin untuk mengelola platform"
                     : "Platform terpercaya untuk kebutuhan bahan pangan berkualitas tinggi"}
-              </p>
-              <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-                {isRole("farmer") ? (
-                  <>
-                    <Link href="/farmer/products">
-                      <Button className="bg-white text-orange-600 hover:bg-gray-100">Kelola Produk</Button>
-                    </Link>
-                    <Link href="/farmer/auctions">
-                      <Button
-                        variant="outline"
-                        className="border-white text-white hover:bg-white hover:text-orange-600"
-                      >
-                        Buat Lelang
-                      </Button>
-                    </Link>
-                  </>
-                ) : isRole("admin") ? (
-                  <>
-                    <Link href="/admin/dashboard">
-                      <Button className="bg-white text-orange-600 hover:bg-gray-100">Admin Dashboard</Button>
-                    </Link>
-                    <Link href="/admin/users">
-                      <Button
-                        variant="outline"
-                        className="border-white text-white hover:bg-white hover:text-orange-600"
-                      >
-                        Kelola Users
-                      </Button>
-                    </Link>
-                  </>
-                ) : (
-                  <>
-                    <Link href="/marketplace">
-                      <Button className="bg-white text-orange-600 hover:bg-gray-100">Jelajahi Marketplace</Button>
-                    </Link>
-                    <Link href="/auctions">
-                      <Button
-                        variant="outline"
-                        className="border-white text-white hover:bg-white hover:text-orange-600"
-                      >
-                        Ikuti Lelang
-                      </Button>
-                    </Link>
-                  </>
-                )}
-              </div>
-            </div>
-            <div className="hidden lg:flex justify-center">
-              <div className="w-32 h-32 bg-white rounded-full flex items-center justify-center">
-                <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center">
-                  <div className="w-8 h-8 bg-white rounded-full"></div>
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  {isRole("farmer") ? (
+                    <>
+                      <Link href="/farmer/products">
+                        <Button className="bg-white text-orange-600 hover:bg-gray-100">Kelola Produk</Button>
+                      </Link>
+                      <Link href="/farmer/auctions">
+                        <Button
+                          variant="outline"
+                          className="border-white text-white hover:bg-white hover:text-orange-600"
+                        >
+                          Buat Lelang
+                        </Button>
+                      </Link>
+                    </>
+                  ) : isRole("admin") ? (
+                    <>
+                      <Link href="/admin/dashboard">
+                        <Button className="bg-white text-orange-600 hover:bg-gray-100">Admin Dashboard</Button>
+                      </Link>
+                      <Link href="/admin/users">
+                        <Button
+                          variant="outline"
+                          className="border-white text-white hover:bg-white hover:text-orange-600"
+                        >
+                          Kelola Users
+                        </Button>
+                      </Link>
+                    </>
+                  ) : (
+                    <>
+                      <Link href="/marketplace">
+                        <Button className="bg-white text-orange-600 hover:bg-gray-100">Jelajahi Marketplace</Button>
+                      </Link>
+                      <Link href="/auctions">
+                        <Button
+                          variant="outline"
+                          className="border-white text-white hover:bg-white hover:text-orange-600"
+                        >
+                          Ikuti Lelang
+                        </Button>
+                      </Link>
+                    </>
+                  )}
                 </div>
               </div>
             </div>

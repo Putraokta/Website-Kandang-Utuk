@@ -82,19 +82,19 @@ export default function AuctionDetailPage({ params }: { params: { id: string } }
   // Sample auction data
   const auction: AuctionDetail = {
     id: params.id,
-    name: "Ayam Kampung Super Grade A Premium",
+    name: "Bima SN x Blackdragon (Anakan) ",
     description:
-      "Ayam kampung berkualitas super dengan grade A. Ayam sehat, aktif, dan sudah divaksin lengkap. Cocok untuk ternak atau konsumsi. Berat ideal dan postur bagus. Sudah terbukti kualitasnya dengan sertifikat kesehatan dari dokter hewan.",
+      "Anakan Ayam dengan trah yang baik dan gaya tarung yang kuat serta full brakot.",
     images: [
-      "/placeholder.svg?height=400&width=400",
-      "/placeholder.svg?height=400&width=400",
-      "/placeholder.svg?height=400&width=400",
-      "/placeholder.svg?height=400&width=400",
+      "/7.jpg?height=400&width=400",
+      "/7.jpg?height=400&width=400",
+      "/7.jpg?height=400&width=400",
+      "/7.jpg?height=400&width=400",
     ],
-    currentBid: 85000,
-    startPrice: 50000,
-    buyNowPrice: 150000,
-    bidIncrement: 5000,
+    currentBid: 1000000,
+    startPrice: 250000,
+    buyNowPrice: 1750000,
+    bidIncrement: 50000,
     totalBids: 12,
     watchers: 28,
     timeLeft: 2 * 60 * 60 * 1000 + 15 * 60 * 1000, // 2 jam 15 menit
